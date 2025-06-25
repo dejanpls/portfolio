@@ -30,7 +30,7 @@
   <body>
     <div class="wrapper">
       <div class="menu-container">
-        <nav class="menu">
+        <nav aria-label="Navigation">
           <a href="#about">About</a>
           <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
@@ -38,24 +38,36 @@
       </div>
 
       <div class="main-container">
-        <main class="main">
+        <main>
           <header id="about">
-            <img
-              class="image"
-              src="./assets/images/kasper.jpeg"
-              alt="picture of my dog Kasper"
-            />
-            <div class="text">
-              Hi, I'm Dejan and I build creative web applications with
-              JavaScript. Currently going through theodinproject.com JavaScript
-              curriculum while at the same time working on mojabiblija.com. Hope
-              you find my work inspiring and helpful. God bless. Dejan.
+            <div>
+              <h1>Hey, I'm Dejan</h1>
+              <h2>JavaScript Developer</h2>
+              <div class="introduction">
+                <p>
+                  Hi, I'm Dejan and I build creative web applications with
+                  JavaScript.
+                </p>
+                <p>
+                  Currently going through theodinproject.com JavaScript
+                  curriculum while at the same time working on mojabiblija.com.
+                </p>
+                <p>
+                  Hope you find my work inspiring and helpful. God bless. Dejan.
+                </p>
+              </div>
+
+              <div class="cta">
+                <a href="#contact">Get in Touch</a>
+                <a href="#projects">Browse Projects</a>
+              </div>
             </div>
 
-            <div class="social">
-              <i class="devicon-github-original"></i>
-              <i class="material-icons">open_in_new</i>
-            </div>
+            <img
+              class="header-image"
+              src="./assets/images/kasper.jpeg"
+              alt=""
+            />
           </header>
         </main>
       </div>
