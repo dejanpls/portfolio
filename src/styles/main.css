@@ -1,8 +1,44 @@
+@import url('./general.css');
 @import url('./nav.css');
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: 'Funnel Sans', sans-serif;
+div.main-container {
+  max-width: 1200px;
+  border: 1px solid blue;
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  border: 1px solid purple;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  border: 1px solid green;
+  margin: 70px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+header > div {
+  border: 1px solid #8a0909;
+  max-width: 50%;
+}
+
+header > div h1 {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+header > div h2 {
+  font-size: 48px;
+  font-weight: 800;
+}
+
+header > div p {
+  font-size: 20px;
+  font-weight: 300;
 }
