@@ -2,7 +2,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: 0 1rem;
+  padding: 0 0.5rem;
 }
 
 main {
@@ -22,13 +22,13 @@ header#about {
 .left-column,
 .right-column {
   flex: 1 1 0;
-  padding: 1rem;
 }
 
 .left-column {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  min-width: 300px;
   border: 1px solid salmon;
 }
 
@@ -40,12 +40,14 @@ header#about {
 div.left-column h1 {
   font-size: 24px;
   font-weight: 300;
+  margin-bottom: 8px;
 }
 
 div.left-column h2 {
   font-size: 48px;
   font-weight: 800;
   margin-bottom: 8px;
+  line-height: 0.9;
 }
 
 div.left-column p {
