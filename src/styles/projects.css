@@ -78,7 +78,7 @@ section#projects > a {
   font-size: 1.2rem;
 }
 
-@media (max-width: 670px) {
+@media (max-width: 700px) {
   div.card {
     flex: 1 1 400px;
   }
