@@ -28,7 +28,7 @@ header#about {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-width: 300px;
+  min-width: 330px;
   border: 1px solid salmon;
 }
 
@@ -72,7 +72,7 @@ div.right-column > img {
   max-height: 300px;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 670px) {
   header#about {
     gap: 1rem;
   }
