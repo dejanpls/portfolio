@@ -10,13 +10,6 @@ section#projects > h2 {
   margin-bottom: 0.5rem;
 }
 
-section#projects > a {
-  border: 1px solid red;
-  margin-top: 1rem;
-  display: flex;
-  justify-content: center;
-}
-
 div.card {
   min-width: 300px;
   padding: 1rem;
@@ -60,4 +53,14 @@ div.links > a {
   border: 1px solid black;
   padding: 0.3rem;
   font-size: 1.1rem;
+}
+
+section#projects > a {
+  text-decoration: none;
+  color: black;
+  border: 1px solid red;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
 }
