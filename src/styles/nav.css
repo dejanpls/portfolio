@@ -6,6 +6,8 @@ div.menu-container {
   padding: 16px 0;
   position: fixed;
   background-color: white;
+  top: 0;
+  z-index: 999;
 }
 
 nav {
