@@ -16,16 +16,25 @@ div.card {
   display: flex;
   flex-direction: column;
   border: 1px solid red;
-  flex: 1 1 500px;
+  flex: 1 1 30%;
 }
 
 div.card:nth-child(2n) {
-  flex: 2 1 0;
+  flex: 2 1 50%;
 }
 
 .img-container {
+  position: relative;
   height: 300px;
   border: 1px solid blue;
+}
+
+div.links {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  gap: 0.3rem;
 }
 
 div.info > h3 {
@@ -44,11 +53,6 @@ div.info-container {
   align-items: center;
   flex-wrap: wrap;
   gap: 0.5rem;
-}
-
-div.links {
-  display: flex;
-  gap: 0.3rem;
 }
 
 div.links > a {
