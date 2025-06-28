@@ -13,7 +13,7 @@ main {
 
 header#about {
   display: flex;
-  margin: 5rem 0;
+  margin: 3rem 0;
   flex-wrap: wrap;
   width: 100%;
   border: 1px solid green;
@@ -70,4 +70,14 @@ div.cta > a {
 
 div.right-column > img {
   max-height: 300px;
+}
+
+@media (max-width: 620px) {
+  header#about {
+    gap: 1rem;
+  }
+
+  .right-column {
+    justify-content: center;
+  }
 }
