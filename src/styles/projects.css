@@ -6,8 +6,12 @@ div.cards {
 }
 
 section#projects > h2 {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   margin-bottom: 0.5rem;
+}
+
+section#projects > h2 > span {
+  color: rgb(110, 6, 242);
 }
 
 div.card {
@@ -31,8 +35,14 @@ div.card:nth-child(4n) {
 .img-container {
   position: relative;
   height: 300px;
-  border: 2px solid rgb(110, 6, 242);
   border-radius: 1rem;
+  background-color: #e1e4f0;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 div.info > h3 {
@@ -46,7 +56,7 @@ div.info > p {
 
 div.links {
   position: absolute;
-  height: 80px;
+  height: 75px;
   width: 180px;
   right: 0;
   bottom: 0;
@@ -59,7 +69,7 @@ div.links {
     0 100%,
     /* top-left */ 100% 0,
     /* top-right */ 100% 100%,
-    /* bottom-right */ 0% 100% /* bottom-left moved up a bit */
+    /* bottom-right */ 0% 100%
   );
 }
 
@@ -74,14 +84,27 @@ div.links > a.material-icons {
   font-size: 1.5rem;
 }
 
-section#projects > a {
-  text-decoration: none;
-  color: black;
-  border: 1px solid red;
+div.view-more-container {
   margin-top: 1rem;
   display: flex;
   justify-content: center;
+}
+
+div.view-more-container > a {
+  display: flex;
+  justify-content: center;
+  gap: 0.3rem;
+  text-decoration: none;
+  color: black;
   font-size: 1.2rem;
+  font-weight: 700;
+  border: 3px solid white;
+  padding: 4px;
+  transition: border-bottom 0.2s ease-in-out;
+}
+
+div.view-more-container > a:hover {
+  border-bottom: 3px solid rgb(110, 6, 242);
 }
 
 @media (max-width: 700px) {
