@@ -100,9 +100,11 @@ div.cta .projects-cta:hover {
 
 div.right-column > img {
   height: 300px;
+  width: 300px;
   border-radius: 50%;
   border: 1px dotted rgb(110, 6, 242);
   padding: 1.2rem;
+  object-fit: cover;
 }
 
 @media (max-width: 800px) {

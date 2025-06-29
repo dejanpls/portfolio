@@ -1,0 +1,104 @@
+section#contact {
+  margin: 3rem 0;
+  height: 70vh;
+  position: relative;
+}
+
+section#contact > h2 {
+  font-size: 3.5rem;
+}
+
+section#contact > h2 > span {
+  color: rgb(110, 6, 242);
+}
+
+div.decoration {
+  position: absolute;
+  background-color: rgb(248, 250, 252);
+  clip-path: polygon(
+    0 50%,
+    /* top-left */ 90% 0,
+    /* top-right */ 100% 100%,
+    /* bottom-right */ 0% 50%
+  );
+  height: 100%;
+  width: 100%;
+}
+
+div.contact-container * {
+  z-index: 2;
+}
+
+div.contact-container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+div.info-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+div.contact-left {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+div.contact-left h3 {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+div.info-container > div {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 8px 0;
+  gap: 1rem;
+  align-items: center;
+}
+
+div.info-container > div > p {
+  font-size: 1.3rem;
+}
+
+div.info-container > div > div.material-icons {
+  border: 1px dotted rgb(110, 6, 242);
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+div.contact-right {
+  padding: 3rem;
+  border-radius: 50%;
+}
+
+div.contact-right {
+  background-color: rgb(110, 6, 242);
+  color: aliceblue;
+  font-size: 10rem;
+}
+
+@media (max-width: 950px) {
+  div.contact-container {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 500px) {
+  div.info-container > div {
+    justify-content: center;
+  }
+
+  div.contact-left h3 {
+    font-size: 1.2rem;
+  }
+
+  div.info-container > div > p {
+    font-size: 1.2rem;
+  }
+}
