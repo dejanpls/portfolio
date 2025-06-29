@@ -15,7 +15,7 @@ div.card {
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
+  /* border: 1px solid rgb(110, 6, 242); */
   flex: 1 1 30%;
 }
 
@@ -31,15 +31,8 @@ div.card:nth-child(4n) {
 .img-container {
   position: relative;
   height: 300px;
-  border: 1px solid blue;
-}
-
-div.links {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  display: flex;
-  gap: 0.3rem;
+  border: 2px solid rgb(110, 6, 242);
+  border-radius: 1rem;
 }
 
 div.info > h3 {
@@ -51,21 +44,34 @@ div.info > p {
   width: 250px;
 }
 
-div.info-container {
-  border: 1px solid green;
+div.links {
+  position: absolute;
+  height: 80px;
+  width: 180px;
+  right: 0;
+  bottom: 0;
+  border-bottom-right-radius: 1rem;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 0.5rem;
+  align-items: flex-end;
+  justify-content: flex-end;
+  background-color: rgb(110, 6, 242);
+  clip-path: polygon(
+    0 100%,
+    /* top-left */ 100% 0,
+    /* top-right */ 100% 100%,
+    /* bottom-right */ 0% 100% /* bottom-left moved up a bit */
+  );
 }
 
 div.links > a {
   text-decoration: none;
-  color: black;
-  border: 1px solid black;
-  padding: 0.3rem;
-  font-size: 1.1rem;
+  color: aliceblue;
+  padding: 0.7rem;
+  text-align: center;
+}
+
+div.links > a.material-icons {
+  font-size: 1.5rem;
 }
 
 section#projects > a {
